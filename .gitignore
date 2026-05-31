@@ -1,0 +1,48 @@
+# ==============================
+# 1. Dependencies
+# ==============================
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# ==============================
+# 2. Environment Variables (CRITICAL)
+# ==============================
+.env
+server/.env
+client/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==============================
+# 3. Uploaded Files (CRITICAL)
+# ==============================
+# Prevents testing résumés and PDFs from leaking to GitHub
+uploads/
+server/uploads/
+*.pdf
+
+# ==============================
+# 4. Production Build Outputs
+# ==============================
+# Ignores the compiled React files
+client/build/
+client/dist/
+
+# ==============================
+# 5. Logs & Debugging
+# ==============================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ==============================
+# 6. Operating System & Editor Files
+# ==============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
